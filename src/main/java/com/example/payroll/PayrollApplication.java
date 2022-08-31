@@ -21,8 +21,8 @@ public class PayrollApplication {
     @Bean
     CommandLineRunner initDatabase(EmployeeRepository repository) {
         return args -> {
-            repository.save(new Employee("mariam Kvantaliani", "Software Engineer"));
-            repository.save(new Employee("Anna Kvantaliani", "Teacher"));
+            repository.save(new Employee("mariam", "Kvantaliani", "Software Engineer"));
+            repository.save(new Employee("Anna", "Kvantaliani", "Teacher"));
         };
     }
 }
